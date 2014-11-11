@@ -1,4 +1,4 @@
-package com.github.openarduino;
+package com.github.arducomm;
 
 import java.util.Set;
 

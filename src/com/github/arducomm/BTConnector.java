@@ -1,4 +1,4 @@
-package com.github.openarduino;
+package com.github.arducomm;
 
 /**
  * To be implemented:
