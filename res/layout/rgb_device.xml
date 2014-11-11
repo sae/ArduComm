@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.github.openarduino.RGBActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <ToggleButton
+        android:id="@+id/toggleDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginRight="24dp"
+        android:text="ToggleButton"
+        android:textOff="Connect"
+        android:textOn="Connected" />
+
+    <SeekBar
+        android:id="@+id/seekBarR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toggleDevice"
+        android:layout_marginTop="34dp"
+		android:max="255"
+		android:maxHeight="3dp"
+		android:minHeight="3dp"
+		/>
+    
+    <SeekBar
+        android:id="@+id/seekBarG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBarR"
+        android:layout_marginTop="18dp"
+		android:max="255"
+		android:maxHeight="3dp"
+		android:minHeight="3dp"
+		/>
+
+    <SeekBar
+        android:id="@+id/seekBarB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBarG"
+        android:layout_marginTop="17dp" 
+		android:max="255"
+		android:maxHeight="3dp"
+		android:minHeight="3dp"
+		/>
+
+    <TextView
+        android:id="@+id/textStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBarB"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/toggleDevice"
+        android:layout_below="@+id/seekBarB"
+        android:background="#000000"
+        android:text="Black"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonBlack"
+        android:layout_below="@+id/buttonBlack"
+        android:layout_marginTop="20dp"
+        android:text="White" 
+        android:background="#fff"/>
+
+</RelativeLayout>
